@@ -1,0 +1,8 @@
+Terdapat 3 halaman: 
+> Halaman Utama 
+> Halaman Detail 
+> Halaman Profil
+
+Halaman profil dapat diakses di sebelah kanan atas, ada icon profile. 
+
+Selain itu, tidak ada halaman lainnya. 

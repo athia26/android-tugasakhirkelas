@@ -1,0 +1,114 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".DetailWisataActivity"
+    android:orientation="vertical">
+
+    <ImageView
+        android:id="@+id/img_tempat"
+        android:layout_width="match_parent"
+        android:layout_height="250dp"
+        android:src="@drawable/labuanbajo"
+        android:padding="5dp"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="8dp">
+
+        <TextView
+            android:id="@+id/tv_nama_tempat"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Nama Tempat Wisata"
+            android:paddingBottom="6dp"
+            android:textStyle="bold"
+            android:textSize="20sp"/>
+
+            <TextView
+                android:id="@+id/tv_deskripsi_tempat"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                tools:text="deskripsi"/>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:padding="5dp"
+                android:gravity="center_vertical">
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:src="@drawable/ic_baseline_location_on_24"/>
+
+                <TextView
+                    android:id="@+id/tv_lokasi_tempat"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="lokasi"/>
+
+            </LinearLayout>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:paddingBottom="5dp">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Tonton Video"
+            android:textSize="20sp"
+            android:background="#646464"
+            android:textAlignment="center"
+            android:textColor="#ffff"/>
+
+        <com.pierfrancescosoffritti.androidyoutubeplayer.core.player.views.YouTubePlayerView
+            android:id="@+id/yp_player"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="8dp"/>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Lihat Di Maps"
+            android:textSize="20sp"
+            android:background="#646464"
+            android:textAlignment="center"
+            android:textColor="#ffff"/>
+
+        <fragment
+            android:id="@+id/map_wisata"
+            android:name="com.google.android.gms.maps.SupportMapFragment"
+            android:layout_width="match_parent"
+            android:layout_height="200dp"
+            tools:context=".DetailWisataActivity"
+            android:layout_margin="8dp"/>
+
+    </LinearLayout>
+
+
+</LinearLayout>
+</ScrollView>
